@@ -20,7 +20,7 @@ try:
                     <div style='text-align: center;'>
                         <h5 style='margin: 0; color:#5381a3;'>For Optimal Experience:</h5>
                     </div>
-                    <p style='margin: 0; color: black;'>You're currently using the Facebook embedded browser on a mobile device. For a smoother browsing experience, we recommend switching to the Google Chrome browser.</p>
+                    <p style='margin: 0; color: black;'>copy the app link and paste it as your web address of your browser.</p>
                 </div>
                 """,
                 unsafe_allow_html=True
