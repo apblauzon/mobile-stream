@@ -16,7 +16,7 @@ try:
         if not st.session_state.is_session_pc and is_facebook_embedded:
             st.markdown(
                 """
-                <div style='text-align: center; background-color: #ffe5b4; border: 2px solid #ffcc80; padding: 10px; border-radius: 5px;'>
+                <div style='text-align: center; background-color: #fff; border: 2px solid #ffcc80; padding: 10px; border-radius: 5px;'>
                     <h5 style='margin: 0; color: orange;'>You are using a Facebook embedded browser on a mobile device. For a better experience, consider using Google Chrome browser.</h5>
                 </div>
                 """,
