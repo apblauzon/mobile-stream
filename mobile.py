@@ -20,10 +20,9 @@ try:
                     <h5 style='margin: 0; color: orange;'>You are using a Facebook embedded browser on a mobile device. For a better experience, consider using Google Chrome browser.</h5>
                 </div>
                 """,
-                unsafe_allow_html=True
-            )
-
-            
+                unsafe_allow_html=True)   
+        else:
+            st.write("You are in broswer")
     else:
         pass
 except Exception as e:
