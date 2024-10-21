@@ -11,13 +11,8 @@ try:
         user_agent = parse(ua_string)
         st.session_state.is_session_pc = user_agent.is_pc
 
-        # Check for Facebook embedded browser indicators
         is_facebook_embedded = "FBAN" in ua_string or "FBAV" in ua_string
 
-        st.info(f"Is session on a PC? {st.session_state.is_session_pc}")
-        st.info(f"Is the browser embedded in Facebook? {is_facebook_embedded}")
-
-        # Check conditions and create a button to redirect to the specified URL
         if not st.session_state.is_session_pc and is_facebook_embedded:
                 st.markdown(
                 "<h5 style='text-align: center; color: orange;'>You are using a Facebook embedded browser on a mobile device. For a better experience, consider using Google Chrome browser.</h5>",
