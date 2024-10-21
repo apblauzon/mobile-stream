@@ -4,7 +4,7 @@ import streamlit as st
 
 # Get the user agent string from the browser
 ua_string = st_javascript("""window.navigator.userAgent;""")
-st.text(f"User Agent String: {ua_string}")
+
 
 try:
     if ua_string:
