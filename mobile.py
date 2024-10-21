@@ -4,7 +4,7 @@ import streamlit as st
 
 # Get the user agent string from the browser
 ua_string = st_javascript("""window.navigator.userAgent;""")
-
+link = "https://datviz-womchrb5tq-as.a.run.app/"
 
 try:
     if ua_string:
@@ -25,6 +25,20 @@ try:
                 """,
                 unsafe_allow_html=True
             )
+            if st.button("Copy Link"):
+                # JavaScript code to copy the link
+                st.write(
+                    f"""
+                    <script>
+                    navigator.clipboard.writeText('{link}').then(function() {{
+                        alert('Link copied to clipboard!');
+                    }}, function(err) {{
+                        console.error('Could not copy text: ', err);
+                    }});
+                    </script>
+                    """,
+                    unsafe_allow_html=True
+                )
 
         else:
             st.write("You are in broswer")
