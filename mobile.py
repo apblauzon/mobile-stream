@@ -18,7 +18,7 @@ try:
                 """
                 <div style='text-align: center; background-color: #fff; border: 2px solid #ffcc80; padding: 10px; border-radius: 5px;'>
                     <div style='text-align: center;'>
-                        <h5 style='margin: 0; color:#5381a3;'>For Optimal Experience</h5>
+                        <h5 style='margin: 0; color:#5381a3;'> For Optimal Experience</h5>
                     </div>
                     <p style='margin: 0; color: black;'>You're currently using the Facebook embedded browser on a mobile device. For a smoother browsing experience, we recommend switching to the Google Chrome browser.</p>
                 </div>
