@@ -19,11 +19,12 @@ try:
 
         # Check conditions and create a button to redirect to the specified URL
         if not st.session_state.is_session_pc and is_facebook_embedded:
-            st.warning("You are using a Facebook embedded browser on a mobile device. For a better experience, consider using Google Chrome.")
+                st.markdown(
+                "<h5 style='text-align: center; color: orange;'>You are using a Facebook embedded browser on a mobile device. For a better experience, consider using Google Chrome browser.</h5>",
+                unsafe_allow_html=True
+            )
 
-            if st.button("Open in Google Chrome"):
-                # Use JavaScript to open the specified URL
-                st.markdown('<script>window.open("https://test-mobile.streamlit.app/", "_blank")</script>', unsafe_allow_html=True)
+            
     else:
         pass
 except Exception as e:
