@@ -17,10 +17,12 @@ try:
             st.markdown(
                 """
                 <div style='text-align: center; background-color: #fff; border: 2px solid #ffcc80; padding: 10px; border-radius: 5px;'>
-                    <h5 style='margin: 0; color: orange;'>You are using a Facebook embedded browser on a mobile device. For a better experience, consider using Google Chrome browser.</h5>
+                    <h5 style='margin: 0; color: orange;'>For Optimal Experience:</h5>
+                    <p style='margin: 0; color: black;'>You're currently using the Facebook embedded browser on a mobile device. For a smoother browsing experience, we recommend switching to the Google Chrome browser.</p>
                 </div>
                 """,
-                unsafe_allow_html=True)   
+                unsafe_allow_html=True
+            )  
         else:
             st.write("You are in broswer")
     else:
