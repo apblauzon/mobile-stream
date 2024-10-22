@@ -3,10 +3,10 @@ from user_agents import parse
 import streamlit as st
 import pyperclip
 
-# Get the user agent string from the browser
+st.set_page_config(page_title="DatViz Ai", page_icon="logo.svg", layout="wide")
 ua_string = st_javascript("""window.navigator.userAgent;""")
 a='https://test-mobile.streamlit.app/'
-st.set_page_config(page_title="DatViz Ai", page_icon="logo.svg", layout="wide")
+
 
 try:
     if ua_string:
