@@ -27,9 +27,7 @@ try:
             )
             st.write("")
             st.write("")
-            if st.button('Copy Link', type='primary',use_container_width=True):
-                pyperclip.copy(a)
-                st.success('Link Copied Successfully!')
+            st_copy_to_clipboard("https://test-mobile.streamlit.app/")
         else:
             st.write("You are in broswer")
     else:
