@@ -16,6 +16,7 @@ try:
         is_facebook_embedded = "FBAN" in ua_string or "FBAV" in ua_string
 
         if not st.session_state.is_session_pc and is_facebook_embedded:
+            st.image("head_logo.svg", use_column_width=True)
             st.markdown(
                 """
                 <div style='text-align: center; background-color: #fff; padding: 10px; border-radius: 5px;'>
