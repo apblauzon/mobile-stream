@@ -27,27 +27,9 @@ try:
             )
             st.write("")
             st.write("")
-            st.markdown("""
-            <style>
-            .centered {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 1vh;
-            }
-            </style>
-            """, unsafe_allow_html=True)
-
-            # Wrap the copy to clipboard widget in a div with the class 'centered'
-            st.markdown('<div class="centered">', unsafe_allow_html=True)
-            
-            # Your st_copy_to_clipboard widget
-            st_copy_to_clipboard("https://test-mobile.streamlit.app/")
-            
-            # Close the div
-            st.markdown('</div>', unsafe_allow_html=True)
-        else:
-            st.write("You are in broswer")
+            col1,col2,col3,col4,col5 = st.columns(3)
+            with col3:
+                st_copy_to_clipboard("https://test-mobile.streamlit.app/")
     else:
         pass
 except Exception as e:
