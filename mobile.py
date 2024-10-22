@@ -27,8 +27,8 @@ try:
             )
             st.write("")
             st.write("")
-            col1,col2,col3,col4,col5 = st.columns(3)
-            with col3:
+            col1,col2,col3 = st.columns(3)
+            with col2:
                 st_copy_to_clipboard("https://test-mobile.streamlit.app/")
     else:
         pass
