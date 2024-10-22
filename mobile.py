@@ -6,6 +6,7 @@ import pyperclip
 # Get the user agent string from the browser
 ua_string = st_javascript("""window.navigator.userAgent;""")
 a='https://test-mobile.streamlit.app/'
+style.set_page("wide")
 
 try:
     if ua_string:
