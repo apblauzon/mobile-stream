@@ -1,7 +1,7 @@
 from streamlit_javascript import st_javascript
 from user_agents import parse
 import streamlit as st
-import pyperclip
+
 
 st.set_page_config(page_title="DatViz Ai", page_icon="logo.svg", layout="wide")
 ua_string = st_javascript("""window.navigator.userAgent;""")
