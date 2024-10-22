@@ -1,10 +1,11 @@
 from streamlit_javascript import st_javascript
 from user_agents import parse
 import streamlit as st
+import pyperclip
 
 # Get the user agent string from the browser
 ua_string = st_javascript("""window.navigator.userAgent;""")
-link = "https://datviz-womchrb5tq-as.a.run.app/"
+a='https://test-mobile.streamlit.app/'
 
 try:
     if ua_string:
@@ -25,21 +26,9 @@ try:
                 """,
                 unsafe_allow_html=True
             )
-            if st.button("Copy Link"):
-                # JavaScript code to copy the link
-                st.write(
-                    f"""
-                    <script>
-                    navigator.clipboard.writeText('{link}').then(function() {{
-                        alert('Link copied to clipboard!');
-                    }}, function(err) {{
-                        console.error('Could not copy text: ', err);
-                    }});
-                    </script>
-                    """,
-                    unsafe_allow_html=True
-                )
-
+            if st.button('Copy Link', type='primary',use_container_width=True):
+                pyperclip.copy(a)
+                st.success('Link Copied Successfully!')
         else:
             st.write("You are in broswer")
     else:
