@@ -5,7 +5,7 @@ import pyperclip
 
 st.set_page_config(page_title="DatViz Ai", page_icon="logo.svg", layout="wide")
 ua_string = st_javascript("""window.navigator.userAgent;""")
-a='https://test-mobile.streamlit.app/'
+link='https://test-mobile.streamlit.app/'
 
 
 try:
