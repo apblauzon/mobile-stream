@@ -19,7 +19,7 @@ try:
             st.markdown(
                 """
                 <div style='text-align: center; background-color: #fff; padding: 10px; border-radius: 5px;'>
-                    <p style='margin: 0; color: black;'>copy the app link and paste it as your web address of your browser.</p>
+                    <p style='margin: 0; color: black;'>Copy the app link and paste it as your web address of your browser.</p>
                 </div>
                 """,
                 unsafe_allow_html=True
