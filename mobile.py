@@ -17,7 +17,7 @@ try:
         if not st.session_state.is_session_pc and is_facebook_embedded:
             st.markdown(
                 """
-                <div style='text-align: center; background-color: #fff; border: 2px solid #ffcc80; padding: 10px; border-radius: 5px;'>
+                <div style='text-align: center; background-color: #fff; padding: 10px; border-radius: 5px;'>
                     <div style='text-align: center;'>
                         <h5 style='margin: 0; color:#5381a3;'>For Optimal Experience:</h5>
                     </div>
